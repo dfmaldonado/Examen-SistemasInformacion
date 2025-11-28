@@ -1,12 +1,20 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import { useLoanCalculator } from '@/hooks/useLoanCalculator'
+import { Text } from '@react-navigation/elements'
+import { View } from 'react-native-reanimated/lib/typescript/Animated'
 
 const AmortizationPlan = () => {
+
+  <View>
+    <Text>
+      Escriba su nuevo plan de amortización
+    </Text>
+  </View>
+
+
   return (
-    <View>
-      <Text>AmortizationPlan</Text>
-    </View>
+useLoanCalculator
   )
+
 }
 
 export default AmortizationPlan
