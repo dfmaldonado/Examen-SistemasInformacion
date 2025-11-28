@@ -1,18 +1,25 @@
+import AmortizationPlan from '@/components/AmortizationPlan';
+import LoanForm from '@/components/LoanForm';
+import { useLoanCalculator } from '@/hooks/useLoanCalculator';
+import { Text } from '@react-navigation/elements';
 import 'react-native-reanimated';
 
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+interface Props {
+  Text: string;
+}
 
 export default function RootLayout() {
-  // return (
-  //   // <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-  //   //   <Stack>
-  //   //     <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-  //   //     <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-  //   //   </Stack>
-  //   //   <StatusBar style="auto" />
-  //   // </ThemeProvider>
-  // );
+  return (
+    <Text>
+      INICIO
+    </Text>
+
+    
+  );
+
+export default function (){
+    useLoanCalculator
+    LoanForm
+    AmortizationPlan
+  }
 }
